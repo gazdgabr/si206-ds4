@@ -41,6 +41,9 @@ class Tests(unittest.TestCase):
     def test_factorial(self):
         self.assertEqual(factorial(5), 120)
 
+    def test_factorial_again(self):
+        self.assertEqual(factorial(1), 1)
+
     def test_leap_year(self):
         self.assertEqual(check_leap_year(1912), True)
 
