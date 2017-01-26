@@ -36,13 +36,22 @@ print("check_leap_year(2100): {}".format(check_leap_year(2100)))
 
 
 
-class Tests(unittest.TestCase):
+class TestFactorials(unittest.TestCase):
 
     def test_factorial(self):
         self.assertEqual(factorial(5), 120)
 
     def test_factorial_again(self):
         self.assertEqual(factorial(1), 1)
+
+    def test_factorial_yetagain (self):
+        self.assertEqual(factorial(0), 1)
+
+    def test_factorial_last(self):
+        self.assertEqual(factorial(-5), None)
+
+
+class LeapYearTests(unittest.TestCase):
 
     def test_leap_year(self):
         self.assertEqual(check_leap_year(1912), True)
